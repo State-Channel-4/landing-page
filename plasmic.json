@@ -1,0 +1,233 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "58GpZjZCWTaJ8AUhpCwt2K",
+      "projectApiToken": "DIkcfhBwjMCJSjcxfBkMuy4NImyytq5EWylxVcpS9t9EpdhnPQuBgBGxmk00AB1itMFa1KXTxOKnrjN2PN9nlA",
+      "projectName": "react-awesome-reveal",
+      "version": "3.8.0",
+      "cssFilePath": "plasmic/react_awesome_reveal/plasmic_react_awesome_reveal.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "R6s1FdhksG",
+          "name": "Reveal",
+          "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
+        }
+      ]
+    },
+    {
+      "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
+      "projectApiToken": "uZp069FLSLNVA2dpWnqC3BUaj3flvtNBNXt6e1b67rm4Uh6lGHgYJ65FCBXlOFTB5KDW7RmmOxIAzgHYCg",
+      "projectName": "plasmic-nav",
+      "version": "0.8.0",
+      "cssFilePath": "plasmic/plasmic_nav/plasmic_plasmic_nav.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "jGx9tiKJoex",
+          "name": "NavigationBar",
+          "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ]
+    },
+    {
+      "projectId": "neRFmgTP9QWA953pSsa5o7",
+      "projectApiToken": "06PrOkTzTgZfqbdhV4tPCIWhwUNJRSxsFC8H2Dc6KAPJif96TDxYld60oiVu0RaLEDrYS46bF5p9FpjJQ",
+      "projectName": "channel 4",
+      "version": "latest",
+      "cssFilePath": "plasmic/channel_4/plasmic_channel_4.module.css",
+      "components": [
+        {
+          "id": "rIIJlCtVj4",
+          "name": "Index",
+          "type": "managed",
+          "projectId": "neRFmgTP9QWA953pSsa5o7",
+          "renderModuleFilePath": "plasmic/channel_4/PlasmicIndex.tsx",
+          "importSpec": {
+            "modulePath": "Index.tsx"
+          },
+          "cssFilePath": "plasmic/channel_4/PlasmicIndex.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "pGak-yv7rOU",
+          "name": "Button",
+          "type": "managed",
+          "projectId": "neRFmgTP9QWA953pSsa5o7",
+          "renderModuleFilePath": "plasmic/channel_4/PlasmicButton.tsx",
+          "importSpec": {
+            "modulePath": "Button.tsx"
+          },
+          "cssFilePath": "plasmic/channel_4/PlasmicButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "button"
+        },
+        {
+          "id": "9XCuOPL0Q3",
+          "name": "ButtonPrimary",
+          "type": "managed",
+          "projectId": "neRFmgTP9QWA953pSsa5o7",
+          "renderModuleFilePath": "plasmic/channel_4/PlasmicButtonPrimary.tsx",
+          "importSpec": {
+            "modulePath": "ButtonPrimary.tsx"
+          },
+          "cssFilePath": "plasmic/channel_4/PlasmicButtonPrimary.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "eaXFBngpS2",
+          "name": "DiscordIcon",
+          "moduleFilePath": "plasmic/channel_4/icons/PlasmicIcon__Discord.tsx"
+        },
+        {
+          "id": "VEwB0Sa7oAv",
+          "name": "ChecksvgIcon",
+          "moduleFilePath": "plasmic/channel_4/icons/PlasmicIcon__Checksvg.tsx"
+        },
+        {
+          "id": "K0mbZlcX6xb",
+          "name": "IconIcon",
+          "moduleFilePath": "plasmic/channel_4/icons/PlasmicIcon__Icon.tsx"
+        },
+        {
+          "id": "VIkio6fs-e",
+          "name": "Line1Icon",
+          "moduleFilePath": "plasmic/channel_4/icons/PlasmicIcon__Line1.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "jmtEkPN8e",
+          "name": "Ellipse 1",
+          "filePath": "plasmic/channel_4/images/ellipse1.bin"
+        },
+        {
+          "id": "sj9q1fb5N",
+          "name": "image 2",
+          "filePath": "plasmic/channel_4/images/image2.png"
+        },
+        {
+          "id": "DJSmznb1u6",
+          "name": "image 1",
+          "filePath": "plasmic/channel_4/images/image1.png"
+        },
+        {
+          "id": "KfZE-MykdX",
+          "name": "image 3",
+          "filePath": "plasmic/channel_4/images/image3.png"
+        },
+        {
+          "id": "jkPJODOsvN",
+          "name": "image 4",
+          "filePath": "plasmic/channel_4/images/image4.png"
+        },
+        {
+          "id": "o8oZaPPRJP",
+          "name": "Rectangle 6",
+          "filePath": "plasmic/channel_4/images/rectangle6.bin"
+        },
+        {
+          "id": "9mrcxvfm8O",
+          "name": "Ellipse 2",
+          "filePath": "plasmic/channel_4/images/ellipse2.bin"
+        },
+        {
+          "id": "kkHBoO3DQ",
+          "name": "Rectangle 7",
+          "filePath": "plasmic/channel_4/images/rectangle7.bin"
+        },
+        {
+          "id": "tsyKz1xnnV",
+          "name": "Ellipse 3",
+          "filePath": "plasmic/channel_4/images/ellipse3.bin"
+        },
+        {
+          "id": "D8ER85-y8",
+          "name": "Ellipse 4",
+          "filePath": "plasmic/channel_4/images/ellipse4.bin"
+        },
+        {
+          "id": "FXf3cNIMEB",
+          "name": "Ellipse 5",
+          "filePath": "plasmic/channel_4/images/ellipse5.bin"
+        },
+        {
+          "id": "tpAok4K3y4",
+          "name": "Ellipse 6",
+          "filePath": "plasmic/channel_4/images/ellipse6.bin"
+        },
+        {
+          "id": "OnkiPE4Vwt",
+          "name": "Ellipse 7",
+          "filePath": "plasmic/channel_4/images/ellipse7.bin"
+        },
+        {
+          "id": "On4mDJNIV",
+          "name": "image",
+          "filePath": "plasmic/channel_4/images/image.png"
+        }
+      ],
+      "indirect": false,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "qzjggDO6vD",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        },
+        {
+          "id": "4_Dbs2EyiJ",
+          "name": "Fetcher",
+          "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "gwAE5GtTDpVtL",
+        "name": "Screen",
+        "projectId": "neRFmgTP9QWA953pSsa5o7",
+        "contextFilePath": "plasmic/channel_4/PlasmicGlobalVariant__Screen.tsx"
+      }
+    ]
+  },
+  "wrapPagesWithGlobalContexts": true,
+  "cliVersion": "0.1.212",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.212/dist/plasmic.schema.json"
+}

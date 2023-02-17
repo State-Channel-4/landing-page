@@ -1,0 +1,51 @@
+.buttonPrimary {
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  border-radius: 24px;
+  padding: 12px 24px;
+  border: 1px solid #ffffff;
+}
+.buttonPrimary > :global(.__wab_flex-container) {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: calc(0px - 8px);
+  width: calc(100% + 8px);
+}
+.buttonPrimary > :global(.__wab_flex-container) > *,
+.buttonPrimary > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.buttonPrimary > :global(.__wab_flex-container) > picture > img,
+.buttonPrimary
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 8px;
+}
+.buttonPrimary:hover {
+  transform: translateX(0px) translateY(-8px) translateZ(0px);
+  cursor: pointer;
+}
+.buttonPrimary:hover:active {
+  transform: translateX(0px) translateY(-8px) translateZ(0px);
+}
+.btnString {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  color: rgba(251, 251, 251, 1);
+  position: relative;
+}
+.buttonPrimary:hover .btnString {
+  padding-left: 0px;
+}
+.buttonPrimary:hover:active .btnString {
+  padding-left: 0px;
+}

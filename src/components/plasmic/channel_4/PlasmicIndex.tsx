@@ -60,11 +60,11 @@ export const PlasmicIndex__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicIndex__OverridesType = {
   content?: p.Flex<"div">;
+  imgOmg?: p.Flex<"div">;
+  imgLaughing?: p.Flex<"div">;
+  imgMindblow?: p.Flex<"div">;
+  imgBird?: p.Flex<"div">;
   hero?: p.Flex<"div">;
-  image2?: p.Flex<"div">;
-  image1?: p.Flex<"div">;
-  image3?: p.Flex<"div">;
-  image4?: p.Flex<"div">;
   frame9?: p.Flex<"div">;
   frame2?: p.Flex<"div">;
   discoverTheUnexpected?: p.Flex<"div">;
@@ -169,110 +169,114 @@ function PlasmicIndex__RenderFunc(props: {
             sty.content
           )}
         >
-          <div
-            data-plasmic-name={"hero"}
-            data-plasmic-override={overrides.hero}
-            className={classNames(projectcss.all, sty.hero)}
-          >
-            <p.PlasmicImg
-              alt={""}
-              className={classNames(sty.img__g7Qwm)}
-              displayHeight={"945px" as const}
-              displayMaxHeight={"none" as const}
-              displayMaxWidth={"100%" as const}
-              displayMinHeight={"0" as const}
-              displayMinWidth={"0" as const}
-              displayWidth={"659px" as const}
-              loading={"lazy" as const}
-              src={{
-                src: rectangle7KkHBoO3Dq,
-                fullWidth: 659,
-                fullHeight: 945,
-                aspectRatio: 0.697354
-              }}
-            />
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox___6GalC)}>
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__g7Qwm)}
+                displayHeight={"945px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"100%" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"659px" as const}
+                loading={"lazy" as const}
+                src={{
+                  src: rectangle7KkHBoO3Dq,
+                  fullWidth: 659,
+                  fullHeight: 945,
+                  aspectRatio: 0.697354
+                }}
+              />
 
-            <div
-              data-plasmic-name={"image2"}
-              data-plasmic-override={overrides.image2}
-              className={classNames(projectcss.all, sty.image2)}
-            />
+              <div
+                data-plasmic-name={"imgOmg"}
+                data-plasmic-override={overrides.imgOmg}
+                className={classNames(projectcss.all, sty.imgOmg)}
+              />
 
-            <div
-              data-plasmic-name={"image1"}
-              data-plasmic-override={overrides.image1}
-              className={classNames(projectcss.all, sty.image1)}
-            />
+              <div
+                data-plasmic-name={"imgLaughing"}
+                data-plasmic-override={overrides.imgLaughing}
+                className={classNames(projectcss.all, sty.imgLaughing)}
+              />
 
-            <div
-              data-plasmic-name={"image3"}
-              data-plasmic-override={overrides.image3}
-              className={classNames(projectcss.all, sty.image3)}
-            />
+              <div
+                data-plasmic-name={"imgMindblow"}
+                data-plasmic-override={overrides.imgMindblow}
+                className={classNames(projectcss.all, sty.imgMindblow)}
+              />
 
-            <div
-              data-plasmic-name={"image4"}
-              data-plasmic-override={overrides.image4}
-              className={classNames(projectcss.all, sty.image4)}
-            />
+              <div
+                data-plasmic-name={"imgBird"}
+                data-plasmic-override={overrides.imgBird}
+                className={classNames(projectcss.all, sty.imgBird)}
+              />
 
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"frame9"}
-              data-plasmic-override={overrides.frame9}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.frame9)}
-            >
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame2"}
-                data-plasmic-override={overrides.frame2}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame2)}
+              <div
+                data-plasmic-name={"hero"}
+                data-plasmic-override={overrides.hero}
+                className={classNames(projectcss.all, sty.hero)}
               >
-                <div
-                  data-plasmic-name={"discoverTheUnexpected"}
-                  data-plasmic-override={overrides.discoverTheUnexpected}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.discoverTheUnexpected
-                  )}
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"frame9"}
+                  data-plasmic-override={overrides.frame9}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.frame9)}
                 >
-                  {"Discover the unexpected. "}
-                </div>
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"frame2"}
+                    data-plasmic-override={overrides.frame2}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.frame2)}
+                  >
+                    <div
+                      data-plasmic-name={"discoverTheUnexpected"}
+                      data-plasmic-override={overrides.discoverTheUnexpected}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.discoverTheUnexpected
+                      )}
+                    >
+                      {"Discover the unexpected. "}
+                    </div>
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__iizzo
-                  )}
-                >
-                  {"Random, joyful content for your eyeholes"}
-                </div>
+                    <div
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.__wab_text,
+                        sty.text__iizzo
+                      )}
+                    >
+                      {"Random, joyful content for your eyeholes"}
+                    </div>
 
-                <a
-                  data-plasmic-name={"signup2"}
-                  data-plasmic-override={overrides.signup2}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.signup2
-                  )}
-                  href={"https://airtable.com/shrAUZyvmFeWqti4F" as const}
-                  target={"_blank" as const}
-                >
-                  <ButtonPrimary
-                    className={classNames(
-                      "__wab_instance",
-                      sty.buttonPrimary___9U1Nk
-                    )}
-                  />
-                </a>
-              </p.Stack>
-            </p.Stack>
-          </div>
+                    <a
+                      data-plasmic-name={"signup2"}
+                      data-plasmic-override={overrides.signup2}
+                      className={classNames(
+                        projectcss.all,
+                        projectcss.a,
+                        sty.signup2
+                      )}
+                      href={"https://airtable.com/shrAUZyvmFeWqti4F" as const}
+                      target={"_blank" as const}
+                    >
+                      <ButtonPrimary
+                        className={classNames(
+                          "__wab_instance",
+                          sty.buttonPrimary___9U1Nk
+                        )}
+                      />
+                    </a>
+                  </p.Stack>
+                </p.Stack>
+              </div>
+            </div>
+          ) : null}
 
           <div
             data-plasmic-name={"tickers"}
@@ -852,11 +856,11 @@ function PlasmicIndex__RenderFunc(props: {
 const PlasmicDescendants = {
   content: [
     "content",
+    "imgOmg",
+    "imgLaughing",
+    "imgMindblow",
+    "imgBird",
     "hero",
-    "image2",
-    "image1",
-    "image3",
-    "image4",
     "frame9",
     "frame2",
     "discoverTheUnexpected",
@@ -906,21 +910,11 @@ const PlasmicDescendants = {
     "discordLink",
     "discord"
   ],
-  hero: [
-    "hero",
-    "image2",
-    "image1",
-    "image3",
-    "image4",
-    "frame9",
-    "frame2",
-    "discoverTheUnexpected",
-    "signup2"
-  ],
-  image2: ["image2"],
-  image1: ["image1"],
-  image3: ["image3"],
-  image4: ["image4"],
+  imgOmg: ["imgOmg"],
+  imgLaughing: ["imgLaughing"],
+  imgMindblow: ["imgMindblow"],
+  imgBird: ["imgBird"],
+  hero: ["hero", "frame9", "frame2", "discoverTheUnexpected", "signup2"],
   frame9: ["frame9", "frame2", "discoverTheUnexpected", "signup2"],
   frame2: ["frame2", "discoverTheUnexpected", "signup2"],
   discoverTheUnexpected: ["discoverTheUnexpected"],
@@ -1095,11 +1089,11 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   content: "div";
+  imgOmg: "div";
+  imgLaughing: "div";
+  imgMindblow: "div";
+  imgBird: "div";
   hero: "div";
-  image2: "div";
-  image1: "div";
-  image3: "div";
-  image4: "div";
   frame9: "div";
   frame2: "div";
   discoverTheUnexpected: "div";
@@ -1211,11 +1205,11 @@ export const PlasmicIndex = Object.assign(
   makeNodeComponent("content"),
   {
     // Helper components rendering sub-elements
+    imgOmg: makeNodeComponent("imgOmg"),
+    imgLaughing: makeNodeComponent("imgLaughing"),
+    imgMindblow: makeNodeComponent("imgMindblow"),
+    imgBird: makeNodeComponent("imgBird"),
     hero: makeNodeComponent("hero"),
-    image2: makeNodeComponent("image2"),
-    image1: makeNodeComponent("image1"),
-    image3: makeNodeComponent("image3"),
-    image4: makeNodeComponent("image4"),
     frame9: makeNodeComponent("frame9"),
     frame2: makeNodeComponent("frame2"),
     discoverTheUnexpected: makeNodeComponent("discoverTheUnexpected"),

@@ -10,15 +10,25 @@
   min-width: 0;
   min-height: 0;
 }
-.hero {
-  width: 1440px;
-  height: 942px;
-  display: block;
-  overflow: hidden;
+.freeBox___6GalC {
+  display: flex;
   position: relative;
-  left: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
   top: auto;
-  flex-shrink: 0;
+  left: auto;
+  min-width: 0;
+  padding: 0px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___6GalC {
+    height: 940px;
+    flex-shrink: 0;
+  }
 }
 .img__g7Qwm {
   position: absolute;
@@ -28,7 +38,8 @@
   height: 945px;
   display: block !important;
   top: 0px;
-  left: 757px;
+  left: 750px;
+  flex-shrink: 0;
 }
 .img__g7Qwm > picture > img {
   object-fit: cover;
@@ -36,41 +47,60 @@
 .img__g7Qwm > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
-.image2 {
-  background: url("./images/image2.png") center center / cover no-repeat;
+.imgOmg {
+  background: url("./images/omggif.gif") center center / cover no-repeat;
   width: 293px;
   height: 210px;
   display: block;
   position: absolute;
-  top: 150px;
-  left: 767px;
+  top: 170px;
+  left: 750px;
+  flex-shrink: 0;
 }
-.image1 {
-  background: url("./images/image1.png") center center / cover no-repeat;
+.imgLaughing {
+  background: url("./images/laughinggif.gif") center center / cover no-repeat;
   width: 214px;
   height: 277px;
   display: block;
   position: absolute;
-  top: 220px;
-  left: 1075px;
+  top: 390px;
+  left: 860px;
+  flex-shrink: 0;
 }
-.image3 {
-  background: url("./images/image3.png") center center / cover no-repeat;
+.imgMindblow {
+  background: url("./images/mindblowngif.gif") center center / cover no-repeat;
   width: 228px;
   height: 223px;
   display: block;
   position: absolute;
-  top: 380px;
-  left: 832px;
+  top: 460px;
+  left: 1083px;
+  flex-shrink: 0;
 }
-.image4 {
-  background: url("./images/image4.png") center center / cover no-repeat;
+.imgBird {
+  background: url("./images/birdgif.gif") center center / cover no-repeat;
   width: 308px;
   height: 172px;
   display: block;
   position: absolute;
-  top: 508px;
-  left: 1028px;
+  top: 280px;
+  left: 1050px;
+  flex-shrink: 0;
+}
+.hero {
+  width: 100%;
+  height: 942px;
+  display: block;
+  overflow: hidden;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .hero {
+    width: 400px;
+    align-self: flex-end;
+    height: 400px;
+    flex-shrink: 0;
+  }
 }
 .frame9 {
   flex-direction: column;
@@ -83,8 +113,8 @@
 }
 .frame9 > :global(.__wab_flex-container) {
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   margin-top: calc(0px - 48px);
   height: calc(100% + 48px);
 }
@@ -97,6 +127,23 @@
   > picture
   > img {
   margin-top: 48px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame9 {
+    left: 0px;
+    top: 0px;
+    margin-right: 0px;
+    z-index: 1;
+    position: absolute;
+    width: auto;
+    padding: 16px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame9 > :global(.__wab_flex-container) {
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 .frame2 {
   flex-direction: column;
@@ -122,6 +169,17 @@
   > img {
   margin-top: 24px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame2 {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .frame2 > :global(.__wab_flex-container) {
+    min-width: 0;
+  }
+}
 .discoverTheUnexpected {
   display: block;
   font-size: 96px;
@@ -133,6 +191,13 @@
   position: relative;
   width: 676px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .discoverTheUnexpected {
+    width: 100%;
+    font-size: 64px;
+    min-width: 0;
+  }
+}
 .text__iizzo {
   display: block;
   font-size: 32px;
@@ -142,6 +207,12 @@
   line-height: 1.01999;
   color: rgba(251, 251, 251, 1);
   position: relative;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__iizzo {
+    width: 100%;
+    min-width: 0;
+  }
 }
 .signup2 {
   position: relative;

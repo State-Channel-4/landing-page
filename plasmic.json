@@ -7,7 +7,7 @@
   },
   "style": {
     "scheme": "css-modules",
-    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.css"
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
   },
   "images": {
     "scheme": "files",
@@ -38,7 +38,8 @@
           "name": "Reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -57,7 +58,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "neRFmgTP9QWA953pSsa5o7",
@@ -199,6 +201,26 @@
           "id": "On4mDJNIV",
           "name": "image",
           "filePath": "plasmic/channel_4/images/image.png"
+        },
+        {
+          "id": "uz4Nuv0zP",
+          "name": "omg.gif",
+          "filePath": "plasmic/channel_4/images/omggif.gif"
+        },
+        {
+          "id": "LH8bfvitC",
+          "name": "laughing.gif",
+          "filePath": "plasmic/channel_4/images/laughinggif.gif"
+        },
+        {
+          "id": "VhQ7oAAzB",
+          "name": "mindblown.gif",
+          "filePath": "plasmic/channel_4/images/mindblowngif.gif"
+        },
+        {
+          "id": "pPZQJKi7a",
+          "name": "bird.gif",
+          "filePath": "plasmic/channel_4/images/birdgif.gif"
         }
       ],
       "indirect": false,

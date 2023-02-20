@@ -1361,12 +1361,20 @@ export const PlasmicIndex = Object.assign(
     internalVariantProps: PlasmicIndex__VariantProps,
     internalArgProps: PlasmicIndex__ArgProps,
 
+    // Key-value metadata
+    metadata: {
+      title: "Channel 4.WTF",
+      description:
+        "Discover the unexpected. Bringing the OG StumbleUpon back to community."
+    },
+
     // Page metadata
     pageMetadata: {
-      title: "Channel 4. WTF.",
+      title: "Channel 4.WTF",
       description: "",
-      ogImageSrc: "",
-      canonical: ""
+      ogImageSrc:
+        "https://site-assets.plasmic.app/3f7e2ba9df2fcabd4e43d113434f7bc4.png",
+      canonical: "https://channel4.wtf"
     }
   }
 );

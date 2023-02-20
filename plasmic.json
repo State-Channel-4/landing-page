@@ -226,6 +226,11 @@
           "id": "_vHvpyq7hav",
           "name": "image 5",
           "filePath": "plasmic/channel_4/images/image5.svg"
+        },
+        {
+          "id": "jnitEuqy-",
+          "name": "channel4-og.png",
+          "filePath": "plasmic/channel_4/images/channel4Ogpng.png"
         }
       ],
       "indirect": false,

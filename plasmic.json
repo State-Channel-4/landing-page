@@ -221,6 +221,11 @@
           "id": "pPZQJKi7a",
           "name": "bird.gif",
           "filePath": "plasmic/channel_4/images/birdgif.gif"
+        },
+        {
+          "id": "_vHvpyq7hav",
+          "name": "image 5",
+          "filePath": "plasmic/channel_4/images/image5.svg"
         }
       ],
       "indirect": false,

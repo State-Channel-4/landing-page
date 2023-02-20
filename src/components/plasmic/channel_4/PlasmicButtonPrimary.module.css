@@ -25,6 +25,12 @@
   > img {
   margin-left: 8px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .buttonPrimary {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
 .buttonPrimary:hover {
   transform: translateX(0px) translateY(-8px) translateZ(0px);
   cursor: pointer;

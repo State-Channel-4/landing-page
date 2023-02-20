@@ -31,8 +31,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import ButtonPrimary from "../../ButtonPrimary"; // plasmic-import: 9XCuOPL0Q3/component
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import ButtonPrimary from "../../ButtonPrimary"; // plasmic-import: 9XCuOPL0Q3/component
 
 import { useScreenVariants as useScreenVariantsgwAe5GtTDpVtL } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: gwAE5GtTDpVtL/globalVariant
 
@@ -41,15 +41,14 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_channel_4.module.css"; // plasmic-import: neRFmgTP9QWA953pSsa5o7/projectcss
 import sty from "./PlasmicIndex.module.css"; // plasmic-import: rIIJlCtVj4/css
 
-import Line1Icon from "./icons/PlasmicIcon__Line1"; // plasmic-import: VIkio6fs-e/icon
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: VEwB0Sa7oAv/icon
 import DiscordIcon from "./icons/PlasmicIcon__Discord"; // plasmic-import: eaXFBngpS2/icon
+import Line1Icon from "./icons/PlasmicIcon__Line1"; // plasmic-import: VIkio6fs-e/icon
+import ellipse29Mrcxvfm8O from "./images/ellipse2.bin"; // plasmic-import: 9mrcxvfm8O/picture
 import rectangle7KkHBoO3Dq from "./images/rectangle7.bin"; // plasmic-import: kkHBoO3DQ/picture
 import ellipse7OnkiPe4Vwt from "./images/ellipse7.bin"; // plasmic-import: OnkiPE4Vwt/picture
 import ellipse4D8Er85Y8 from "./images/ellipse4.bin"; // plasmic-import: D8ER85-y8/picture
 import ellipse5FXf3CNimeb from "./images/ellipse5.bin"; // plasmic-import: FXf3cNIMEB/picture
 import ellipse6TpAok4K3Y4 from "./images/ellipse6.bin"; // plasmic-import: tpAok4K3y4/picture
-import ellipse29Mrcxvfm8O from "./images/ellipse2.bin"; // plasmic-import: 9mrcxvfm8O/picture
 
 export type PlasmicIndex__VariantMembers = {};
 export type PlasmicIndex__VariantsArgs = {};
@@ -62,6 +61,17 @@ export const PlasmicIndex__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicIndex__OverridesType = {
   content?: p.Flex<"div">;
+  nav?: p.Flex<typeof NavigationBar>;
+  nav2?: p.Flex<"div">;
+  logo?: p.Flex<"div">;
+  group1?: p.Flex<"div">;
+  rectangle2?: p.Flex<"div">;
+  rectangle4?: p.Flex<"div">;
+  rectangle5?: p.Flex<"div">;
+  frame10?: p.Flex<"div">;
+  signup?: p.Flex<"a">;
+  discordLink?: p.Flex<"a">;
+  discord?: p.Flex<"svg">;
   hero?: p.Flex<"div">;
   imgOmg?: p.Flex<"div">;
   imgLaughing?: p.Flex<"div">;
@@ -99,22 +109,13 @@ export type PlasmicIndex__OverridesType = {
   rectangle11?: p.Flex<"div">;
   rectangle12?: p.Flex<"div">;
   rectangle13?: p.Flex<"div">;
+  svg?: p.Flex<"svg">;
   frame13?: p.Flex<"div">;
   frame4?: p.Flex<"div">;
   frame5?: p.Flex<"div">;
   frame6?: p.Flex<"div">;
   frame12?: p.Flex<"div">;
   frame8?: p.Flex<"div">;
-  nav?: p.Flex<typeof NavigationBar>;
-  logo?: p.Flex<"div">;
-  group1?: p.Flex<"div">;
-  rectangle2?: p.Flex<"div">;
-  rectangle4?: p.Flex<"div">;
-  rectangle5?: p.Flex<"div">;
-  frame10?: p.Flex<"div">;
-  signup?: p.Flex<"a">;
-  discordLink?: p.Flex<"a">;
-  discord?: p.Flex<"svg">;
 };
 
 export interface DefaultIndexProps {
@@ -176,6 +177,159 @@ function PlasmicIndex__RenderFunc(props: {
           )}
         >
           {true ? (
+            <NavigationBar
+              data-plasmic-name={"nav"}
+              data-plasmic-override={overrides.nav}
+              brand={null}
+              className={classNames("__wab_instance", sty.nav)}
+              closeButton={
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__oop3P)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={"https://static1.plasmic.app/close.svg" as const}
+                />
+              }
+              forceOpenMenu={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? true
+                  : undefined
+              }
+              itemsGap={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? undefined
+                  : (8 as const)
+              }
+              menuItems={null}
+              openButton={
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__v94Ci)}
+                  displayHeight={"auto" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"auto" as const}
+                  src={"https://static1.plasmic.app/menu.svg" as const}
+                />
+              }
+              responsiveBreakpoint={768 as const}
+            />
+          ) : null}
+
+          <div
+            data-plasmic-name={"nav2"}
+            data-plasmic-override={overrides.nav2}
+            className={classNames(projectcss.all, sty.nav2)}
+          >
+            <div className={classNames(projectcss.all, sty.column__wt9G)}>
+              <div
+                data-plasmic-name={"logo"}
+                data-plasmic-override={overrides.logo}
+                className={classNames(projectcss.all, sty.logo)}
+              >
+                <div
+                  data-plasmic-name={"group1"}
+                  data-plasmic-override={overrides.group1}
+                  className={classNames(projectcss.all, sty.group1)}
+                >
+                  <div
+                    data-plasmic-name={"rectangle2"}
+                    data-plasmic-override={overrides.rectangle2}
+                    className={classNames(projectcss.all, sty.rectangle2)}
+                  />
+
+                  <div
+                    data-plasmic-name={"rectangle4"}
+                    data-plasmic-override={overrides.rectangle4}
+                    className={classNames(projectcss.all, sty.rectangle4)}
+                  />
+
+                  <div
+                    data-plasmic-name={"rectangle5"}
+                    data-plasmic-override={overrides.rectangle5}
+                    className={classNames(projectcss.all, sty.rectangle5)}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img___0CTJi)}
+                    displayHeight={"7px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"7px" as const}
+                    loading={"lazy" as const}
+                    src={{
+                      src: ellipse29Mrcxvfm8O,
+                      fullWidth: 7,
+                      fullHeight: 7,
+                      aspectRatio: 1
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className={classNames(projectcss.all, sty.column___166Gc)}>
+              {true ? (
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"frame10"}
+                  data-plasmic-override={overrides.frame10}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.frame10)}
+                >
+                  <a
+                    data-plasmic-name={"signup"}
+                    data-plasmic-override={overrides.signup}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.signup
+                    )}
+                    href={"https://airtable.com/shrAUZyvmFeWqti4F" as const}
+                    target={"_blank" as const}
+                  >
+                    <ButtonPrimary
+                      className={classNames(
+                        "__wab_instance",
+                        sty.buttonPrimary__v3Fyv
+                      )}
+                    />
+                  </a>
+
+                  <a
+                    data-plasmic-name={"discordLink"}
+                    data-plasmic-override={overrides.discordLink}
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.a,
+                      sty.discordLink
+                    )}
+                    href={"https://discord.gg/76UrYgVyEx" as const}
+                    target={"_blank" as const}
+                  >
+                    <DiscordIcon
+                      data-plasmic-name={"discord"}
+                      data-plasmic-override={overrides.discord}
+                      className={classNames(projectcss.all, sty.discord)}
+                      role={"img"}
+                    />
+                  </a>
+                </p.Stack>
+              ) : null}
+            </div>
+          </div>
+
+          {true ? (
             <div
               data-plasmic-name={"hero"}
               data-plasmic-override={overrides.hero}
@@ -209,11 +363,15 @@ function PlasmicIndex__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.imgOmg)}
               />
 
-              <div
-                data-plasmic-name={"imgLaughing"}
-                data-plasmic-override={overrides.imgLaughing}
-                className={classNames(projectcss.all, sty.imgLaughing)}
-              />
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div
+                  data-plasmic-name={"imgLaughing"}
+                  data-plasmic-override={overrides.imgLaughing}
+                  className={classNames(projectcss.all, sty.imgLaughing)}
+                />
+              ) : null}
 
               <div
                 data-plasmic-name={"imgMindblow"}
@@ -221,11 +379,15 @@ function PlasmicIndex__RenderFunc(props: {
                 className={classNames(projectcss.all, sty.imgMindblow)}
               />
 
-              <div
-                data-plasmic-name={"imgBird"}
-                data-plasmic-override={overrides.imgBird}
-                className={classNames(projectcss.all, sty.imgBird)}
-              />
+              {(
+                hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+              ) ? (
+                <div
+                  data-plasmic-name={"imgBird"}
+                  data-plasmic-override={overrides.imgBird}
+                  className={classNames(projectcss.all, sty.imgBird)}
+                />
+              ) : null}
 
               <div
                 data-plasmic-name={"heroText"}
@@ -591,7 +753,9 @@ function PlasmicIndex__RenderFunc(props: {
                     </div>
 
                     <Line1Icon
-                      className={classNames(projectcss.all, sty.svg___1Ot7F)}
+                      data-plasmic-name={"svg"}
+                      data-plasmic-override={overrides.svg}
+                      className={classNames(projectcss.all, sty.svg)}
                       role={"img"}
                     />
                   </div>
@@ -749,117 +913,6 @@ function PlasmicIndex__RenderFunc(props: {
               </p.Stack>
             </p.Stack>
           </div>
-
-          <NavigationBar
-            data-plasmic-name={"nav"}
-            data-plasmic-override={overrides.nav}
-            brand={
-              <div
-                data-plasmic-name={"logo"}
-                data-plasmic-override={overrides.logo}
-                className={classNames(projectcss.all, sty.logo)}
-              >
-                <div
-                  data-plasmic-name={"group1"}
-                  data-plasmic-override={overrides.group1}
-                  className={classNames(projectcss.all, sty.group1)}
-                >
-                  <div
-                    data-plasmic-name={"rectangle2"}
-                    data-plasmic-override={overrides.rectangle2}
-                    className={classNames(projectcss.all, sty.rectangle2)}
-                  />
-
-                  <div
-                    data-plasmic-name={"rectangle4"}
-                    data-plasmic-override={overrides.rectangle4}
-                    className={classNames(projectcss.all, sty.rectangle4)}
-                  />
-
-                  <div
-                    data-plasmic-name={"rectangle5"}
-                    data-plasmic-override={overrides.rectangle5}
-                    className={classNames(projectcss.all, sty.rectangle5)}
-                  />
-
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img___0CTJi)}
-                    displayHeight={"7px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"7px" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: ellipse29Mrcxvfm8O,
-                      fullWidth: 7,
-                      fullHeight: 7,
-                      aspectRatio: 1
-                    }}
-                  />
-                </div>
-              </div>
-            }
-            className={classNames("__wab_instance", sty.nav)}
-            closeButton={null}
-            itemsGap={8 as const}
-            menuItems={
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"frame10"}
-                data-plasmic-override={overrides.frame10}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.frame10)}
-              >
-                <a
-                  data-plasmic-name={"signup"}
-                  data-plasmic-override={overrides.signup}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.signup
-                  )}
-                  href={"https://airtable.com/shrAUZyvmFeWqti4F" as const}
-                  target={"_blank" as const}
-                >
-                  <ButtonPrimary
-                    className={classNames(
-                      "__wab_instance",
-                      sty.buttonPrimary__v3Fyv
-                    )}
-                  />
-                </a>
-
-                <a
-                  data-plasmic-name={"discordLink"}
-                  data-plasmic-override={overrides.discordLink}
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.discordLink
-                  )}
-                  href={"https://discord.gg/76UrYgVyEx" as const}
-                  target={"_blank" as const}
-                >
-                  <DiscordIcon
-                    data-plasmic-name={"discord"}
-                    data-plasmic-override={overrides.discord}
-                    className={classNames(projectcss.all, sty.discord)}
-                    role={"img"}
-                  />
-                </a>
-              </p.Stack>
-            }
-            openButton={
-              <ChecksvgIcon
-                className={classNames(projectcss.all, sty.svg__wXovd)}
-                role={"img"}
-              />
-            }
-            responsiveBreakpoint={768 as const}
-          />
         </div>
       </div>
     </React.Fragment>
@@ -869,6 +922,17 @@ function PlasmicIndex__RenderFunc(props: {
 const PlasmicDescendants = {
   content: [
     "content",
+    "nav",
+    "nav2",
+    "logo",
+    "group1",
+    "rectangle2",
+    "rectangle4",
+    "rectangle5",
+    "frame10",
+    "signup",
+    "discordLink",
+    "discord",
     "hero",
     "imgOmg",
     "imgLaughing",
@@ -906,13 +970,17 @@ const PlasmicDescendants = {
     "rectangle11",
     "rectangle12",
     "rectangle13",
+    "svg",
     "frame13",
     "frame4",
     "frame5",
     "frame6",
     "frame12",
-    "frame8",
-    "nav",
+    "frame8"
+  ],
+  nav: ["nav"],
+  nav2: [
+    "nav2",
     "logo",
     "group1",
     "rectangle2",
@@ -923,6 +991,15 @@ const PlasmicDescendants = {
     "discordLink",
     "discord"
   ],
+  logo: ["logo", "group1", "rectangle2", "rectangle4", "rectangle5"],
+  group1: ["group1", "rectangle2", "rectangle4", "rectangle5"],
+  rectangle2: ["rectangle2"],
+  rectangle4: ["rectangle4"],
+  rectangle5: ["rectangle5"],
+  frame10: ["frame10", "signup", "discordLink", "discord"],
+  signup: ["signup"],
+  discordLink: ["discordLink", "discord"],
+  discord: ["discord"],
   hero: [
     "hero",
     "imgOmg",
@@ -978,6 +1055,7 @@ const PlasmicDescendants = {
     "rectangle11",
     "rectangle12",
     "rectangle13",
+    "svg",
     "frame13",
     "frame4",
     "frame5",
@@ -1025,6 +1103,7 @@ const PlasmicDescendants = {
     "rectangle11",
     "rectangle12",
     "rectangle13",
+    "svg",
     "frame13",
     "frame4",
     "frame5",
@@ -1048,6 +1127,7 @@ const PlasmicDescendants = {
     "rectangle11",
     "rectangle12",
     "rectangle13",
+    "svg",
     "frame13",
     "frame4",
     "frame5",
@@ -1069,7 +1149,8 @@ const PlasmicDescendants = {
     "group5",
     "rectangle11",
     "rectangle12",
-    "rectangle13"
+    "rectangle13",
+    "svg"
   ],
   logo2: ["logo2", "group3", "rectangle3", "rectangle6", "rectangle7"],
   group3: ["group3", "rectangle3", "rectangle6", "rectangle7"],
@@ -1086,39 +1167,30 @@ const PlasmicDescendants = {
   rectangle11: ["rectangle11"],
   rectangle12: ["rectangle12"],
   rectangle13: ["rectangle13"],
+  svg: ["svg"],
   frame13: ["frame13", "frame4", "frame5", "frame6"],
   frame4: ["frame4"],
   frame5: ["frame5"],
   frame6: ["frame6"],
   frame12: ["frame12", "frame8"],
-  frame8: ["frame8"],
-  nav: [
-    "nav",
-    "logo",
-    "group1",
-    "rectangle2",
-    "rectangle4",
-    "rectangle5",
-    "frame10",
-    "signup",
-    "discordLink",
-    "discord"
-  ],
-  logo: ["logo", "group1", "rectangle2", "rectangle4", "rectangle5"],
-  group1: ["group1", "rectangle2", "rectangle4", "rectangle5"],
-  rectangle2: ["rectangle2"],
-  rectangle4: ["rectangle4"],
-  rectangle5: ["rectangle5"],
-  frame10: ["frame10", "signup", "discordLink", "discord"],
-  signup: ["signup"],
-  discordLink: ["discordLink", "discord"],
-  discord: ["discord"]
+  frame8: ["frame8"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   content: "div";
+  nav: typeof NavigationBar;
+  nav2: "div";
+  logo: "div";
+  group1: "div";
+  rectangle2: "div";
+  rectangle4: "div";
+  rectangle5: "div";
+  frame10: "div";
+  signup: "a";
+  discordLink: "a";
+  discord: "svg";
   hero: "div";
   imgOmg: "div";
   imgLaughing: "div";
@@ -1156,22 +1228,13 @@ type NodeDefaultElementType = {
   rectangle11: "div";
   rectangle12: "div";
   rectangle13: "div";
+  svg: "svg";
   frame13: "div";
   frame4: "div";
   frame5: "div";
   frame6: "div";
   frame12: "div";
   frame8: "div";
-  nav: typeof NavigationBar;
-  logo: "div";
-  group1: "div";
-  rectangle2: "div";
-  rectangle4: "div";
-  rectangle5: "div";
-  frame10: "div";
-  signup: "a";
-  discordLink: "a";
-  discord: "svg";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -1235,6 +1298,17 @@ export const PlasmicIndex = Object.assign(
   makeNodeComponent("content"),
   {
     // Helper components rendering sub-elements
+    nav: makeNodeComponent("nav"),
+    nav2: makeNodeComponent("nav2"),
+    logo: makeNodeComponent("logo"),
+    group1: makeNodeComponent("group1"),
+    rectangle2: makeNodeComponent("rectangle2"),
+    rectangle4: makeNodeComponent("rectangle4"),
+    rectangle5: makeNodeComponent("rectangle5"),
+    frame10: makeNodeComponent("frame10"),
+    signup: makeNodeComponent("signup"),
+    discordLink: makeNodeComponent("discordLink"),
+    discord: makeNodeComponent("discord"),
     hero: makeNodeComponent("hero"),
     imgOmg: makeNodeComponent("imgOmg"),
     imgLaughing: makeNodeComponent("imgLaughing"),
@@ -1275,22 +1349,13 @@ export const PlasmicIndex = Object.assign(
     rectangle11: makeNodeComponent("rectangle11"),
     rectangle12: makeNodeComponent("rectangle12"),
     rectangle13: makeNodeComponent("rectangle13"),
+    svg: makeNodeComponent("svg"),
     frame13: makeNodeComponent("frame13"),
     frame4: makeNodeComponent("frame4"),
     frame5: makeNodeComponent("frame5"),
     frame6: makeNodeComponent("frame6"),
     frame12: makeNodeComponent("frame12"),
     frame8: makeNodeComponent("frame8"),
-    nav: makeNodeComponent("nav"),
-    logo: makeNodeComponent("logo"),
-    group1: makeNodeComponent("group1"),
-    rectangle2: makeNodeComponent("rectangle2"),
-    rectangle4: makeNodeComponent("rectangle4"),
-    rectangle5: makeNodeComponent("rectangle5"),
-    frame10: makeNodeComponent("frame10"),
-    signup: makeNodeComponent("signup"),
-    discordLink: makeNodeComponent("discordLink"),
-    discord: makeNodeComponent("discord"),
 
     // Metadata about props expected for PlasmicIndex
     internalVariantProps: PlasmicIndex__VariantProps,

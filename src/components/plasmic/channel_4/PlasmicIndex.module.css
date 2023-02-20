@@ -51,17 +51,18 @@
 }
 .nav2 {
   display: flex;
-  position: fixed;
-  width: auto;
+  position: absolute;
+  width: 100%;
   height: auto;
   align-items: stretch;
   flex-shrink: 1;
   flex-direction: row;
   flex-wrap: nowrap;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   z-index: 1;
-  right: 0;
+  align-self: stretch;
+  min-width: 0;
   padding: 8px 120px;
 }
 .nav2 > :nth-child(2n + 1) {
@@ -78,6 +79,9 @@
     flex-wrap: wrap;
     padding-right: 16px;
     padding-left: 16px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
     min-width: 0;
   }
 }

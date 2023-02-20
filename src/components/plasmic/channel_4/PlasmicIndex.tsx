@@ -72,7 +72,6 @@ export type PlasmicIndex__OverridesType = {
   frame2?: p.Flex<"div">;
   discoverTheUnexpected?: p.Flex<"div">;
   signup2?: p.Flex<"a">;
-  section2?: p.Flex<"div">;
   content2?: p.Flex<"div">;
   frame11?: p.Flex<"div">;
   logo5?: p.Flex<"div">;
@@ -292,27 +291,26 @@ function PlasmicIndex__RenderFunc(props: {
               </div>
             </div>
           ) : null}
-
-          <div
-            data-plasmic-name={"section2"}
-            data-plasmic-override={overrides.section2}
-            className={classNames(projectcss.all, sty.section2)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text___2GwSe
-              )}
-            >
-              {"NO MORE BUL****T ALGORITHM."}
+          {true ? (
+            <div className={classNames(projectcss.all, sty.freeBox__aL5Jr)}>
+              <div
+                className={classNames(
+                  projectcss.all,
+                  projectcss.__wab_text,
+                  sty.text___2GwSe
+                )}
+              >
+                {"NO MORE BUL****T ALGORITHM."}
+              </div>
             </div>
-          </div>
+          ) : null}
 
           <div className={classNames(projectcss.all, sty.freeBox___8Amh7)}>
-            <div
+            <p.Stack
+              as={"div"}
               data-plasmic-name={"content2"}
               data-plasmic-override={overrides.content2}
+              hasGap={true}
               className={classNames(projectcss.all, sty.content2)}
             >
               <p.Stack
@@ -401,7 +399,7 @@ function PlasmicIndex__RenderFunc(props: {
                     )}
                   >
                     {
-                      "Channel 4 is the app you are looking, experience the OG and new way to discover online content.\n\nWe have come to the long way since internet started. Remember the old days when stumble upon is around? we are not forced by any algorithm and learn so much what’s out there by surfing online.\n\nLooking at the current internet culture, so much people using tiktok, youtube to consume content but many of you already know that you have somehow force to see the content that a big corporation decide for you.\n\nWith Channel 4, oh we haven’t mention this is built on blockchain, user launch the app and hit arrow down key, you see always new things. We are from Pollen lab, a sub-group in PSE. We are here to solve this problem with you.\n"
+                      "If you're on the hunt for an app that'll show you the online world in a brand new light, then Channel 4 is perfect for you. We've been around since the early days of the internet, when stumbleUpon new content was an exciting adventure that didn't involve being funnelled through a pre-determined algorithm. You could spend hours exploring and learning about everything the web had to offer, and that's exactly the kind of experience we want to bring back.\n\nThese days, it's all too easy to get caught up in the same old content on TikTok or YouTube, with big corporations dictating what we see and when we see it. But with Channel 4, that's all about to change. Our app is built on the blockchain, which means that every time you hit the arrow down key, you'll be presented with something new and exciting. No more monotony or predictability – just pure, unadulterated discovery.\n\nWe're the Pollen Lab, a sub-group of PSE, and we're on a mission to make sure that you're never bored or unstimulated again. We are building this with you, the community."
                     }
                   </div>
                 </p.Stack>
@@ -695,7 +693,7 @@ function PlasmicIndex__RenderFunc(props: {
                   </p.Stack>
                 </p.Stack>
               </p.Stack>
-            </div>
+            </p.Stack>
           </div>
 
           <div className={classNames(projectcss.all, sty.freeBox__napVn)}>
@@ -881,7 +879,6 @@ const PlasmicDescendants = {
     "frame2",
     "discoverTheUnexpected",
     "signup2",
-    "section2",
     "content2",
     "frame11",
     "logo5",
@@ -953,7 +950,6 @@ const PlasmicDescendants = {
   frame2: ["frame2", "discoverTheUnexpected", "signup2"],
   discoverTheUnexpected: ["discoverTheUnexpected"],
   signup2: ["signup2"],
-  section2: ["section2"],
   content2: [
     "content2",
     "frame11",
@@ -1133,7 +1129,6 @@ type NodeDefaultElementType = {
   frame2: "div";
   discoverTheUnexpected: "div";
   signup2: "a";
-  section2: "div";
   content2: "div";
   frame11: "div";
   logo5: "div";
@@ -1250,7 +1245,6 @@ export const PlasmicIndex = Object.assign(
     frame2: makeNodeComponent("frame2"),
     discoverTheUnexpected: makeNodeComponent("discoverTheUnexpected"),
     signup2: makeNodeComponent("signup2"),
-    section2: makeNodeComponent("section2"),
     content2: makeNodeComponent("content2"),
     frame11: makeNodeComponent("frame11"),
     logo5: makeNodeComponent("logo5"),

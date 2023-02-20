@@ -34,6 +34,8 @@ import {
 import ButtonPrimary from "../../ButtonPrimary"; // plasmic-import: 9XCuOPL0Q3/component
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 
+import { useScreenVariants as useScreenVariantsgwAe5GtTDpVtL } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: gwAE5GtTDpVtL/globalVariant
+
 import "@plasmicapp/react-web/lib/plasmic.css";
 
 import projectcss from "./plasmic_channel_4.module.css"; // plasmic-import: neRFmgTP9QWA953pSsa5o7/projectcss
@@ -60,17 +62,18 @@ export const PlasmicIndex__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicIndex__OverridesType = {
   content?: p.Flex<"div">;
+  hero?: p.Flex<"div">;
   imgOmg?: p.Flex<"div">;
   imgLaughing?: p.Flex<"div">;
   imgMindblow?: p.Flex<"div">;
   imgBird?: p.Flex<"div">;
-  hero?: p.Flex<"div">;
+  heroText?: p.Flex<"div">;
   frame9?: p.Flex<"div">;
   frame2?: p.Flex<"div">;
   discoverTheUnexpected?: p.Flex<"div">;
   signup2?: p.Flex<"a">;
-  tickers?: p.Flex<"div">;
-  figmaPaste?: p.Flex<"div">;
+  section2?: p.Flex<"div">;
+  content2?: p.Flex<"div">;
   frame11?: p.Flex<"div">;
   logo5?: p.Flex<"div">;
   group6?: p.Flex<"div">;
@@ -150,6 +153,10 @@ function PlasmicIndex__RenderFunc(props: {
 
   const [$queries, setDollarQueries] = React.useState({});
 
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsgwAe5GtTDpVtL()
+  });
+
   return (
     <React.Fragment>
       {}
@@ -170,11 +177,19 @@ function PlasmicIndex__RenderFunc(props: {
           )}
         >
           {true ? (
-            <div className={classNames(projectcss.all, sty.freeBox___6GalC)}>
+            <div
+              data-plasmic-name={"hero"}
+              data-plasmic-override={overrides.hero}
+              className={classNames(projectcss.all, sty.hero)}
+            >
               <p.PlasmicImg
                 alt={""}
                 className={classNames(sty.img__g7Qwm)}
-                displayHeight={"945px" as const}
+                displayHeight={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? ("100%" as const)
+                    : ("945px" as const)
+                }
                 displayMaxHeight={"none" as const}
                 displayMaxWidth={"100%" as const}
                 displayMinHeight={"0" as const}
@@ -214,9 +229,9 @@ function PlasmicIndex__RenderFunc(props: {
               />
 
               <div
-                data-plasmic-name={"hero"}
-                data-plasmic-override={overrides.hero}
-                className={classNames(projectcss.all, sty.hero)}
+                data-plasmic-name={"heroText"}
+                data-plasmic-override={overrides.heroText}
+                className={classNames(projectcss.all, sty.heroText)}
               >
                 <p.Stack
                   as={"div"}
@@ -279,9 +294,9 @@ function PlasmicIndex__RenderFunc(props: {
           ) : null}
 
           <div
-            data-plasmic-name={"tickers"}
-            data-plasmic-override={overrides.tickers}
-            className={classNames(projectcss.all, sty.tickers)}
+            data-plasmic-name={"section2"}
+            data-plasmic-override={overrides.section2}
+            className={classNames(projectcss.all, sty.section2)}
           >
             <div
               className={classNames(
@@ -296,9 +311,9 @@ function PlasmicIndex__RenderFunc(props: {
 
           <div className={classNames(projectcss.all, sty.freeBox___8Amh7)}>
             <div
-              data-plasmic-name={"figmaPaste"}
-              data-plasmic-override={overrides.figmaPaste}
-              className={classNames(projectcss.all, sty.figmaPaste)}
+              data-plasmic-name={"content2"}
+              data-plasmic-override={overrides.content2}
+              className={classNames(projectcss.all, sty.content2)}
             >
               <p.Stack
                 as={"div"}
@@ -614,9 +629,9 @@ function PlasmicIndex__RenderFunc(props: {
                           sty.text__sFlsA
                         )}
                       >
-                        {
-                          "Launching first proof-of-concept\nInvite community to user testing and feedback"
-                        }
+                        {hasVariant(globalVariants, "screen", "mobileOnly")
+                          ? "Launching first proof-of-concept\nInvite community to user testing and feedback"
+                          : "Launching first proof-of-concept\nInvite community to user testing and feedback"}
                       </div>
                     </p.Stack>
 
@@ -856,17 +871,18 @@ function PlasmicIndex__RenderFunc(props: {
 const PlasmicDescendants = {
   content: [
     "content",
+    "hero",
     "imgOmg",
     "imgLaughing",
     "imgMindblow",
     "imgBird",
-    "hero",
+    "heroText",
     "frame9",
     "frame2",
     "discoverTheUnexpected",
     "signup2",
-    "tickers",
-    "figmaPaste",
+    "section2",
+    "content2",
     "frame11",
     "logo5",
     "group6",
@@ -910,18 +926,36 @@ const PlasmicDescendants = {
     "discordLink",
     "discord"
   ],
+  hero: [
+    "hero",
+    "imgOmg",
+    "imgLaughing",
+    "imgMindblow",
+    "imgBird",
+    "heroText",
+    "frame9",
+    "frame2",
+    "discoverTheUnexpected",
+    "signup2"
+  ],
   imgOmg: ["imgOmg"],
   imgLaughing: ["imgLaughing"],
   imgMindblow: ["imgMindblow"],
   imgBird: ["imgBird"],
-  hero: ["hero", "frame9", "frame2", "discoverTheUnexpected", "signup2"],
+  heroText: [
+    "heroText",
+    "frame9",
+    "frame2",
+    "discoverTheUnexpected",
+    "signup2"
+  ],
   frame9: ["frame9", "frame2", "discoverTheUnexpected", "signup2"],
   frame2: ["frame2", "discoverTheUnexpected", "signup2"],
   discoverTheUnexpected: ["discoverTheUnexpected"],
   signup2: ["signup2"],
-  tickers: ["tickers"],
-  figmaPaste: [
-    "figmaPaste",
+  section2: ["section2"],
+  content2: [
+    "content2",
     "frame11",
     "logo5",
     "group6",
@@ -1089,17 +1123,18 @@ type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   content: "div";
+  hero: "div";
   imgOmg: "div";
   imgLaughing: "div";
   imgMindblow: "div";
   imgBird: "div";
-  hero: "div";
+  heroText: "div";
   frame9: "div";
   frame2: "div";
   discoverTheUnexpected: "div";
   signup2: "a";
-  tickers: "div";
-  figmaPaste: "div";
+  section2: "div";
+  content2: "div";
   frame11: "div";
   logo5: "div";
   group6: "div";
@@ -1205,17 +1240,18 @@ export const PlasmicIndex = Object.assign(
   makeNodeComponent("content"),
   {
     // Helper components rendering sub-elements
+    hero: makeNodeComponent("hero"),
     imgOmg: makeNodeComponent("imgOmg"),
     imgLaughing: makeNodeComponent("imgLaughing"),
     imgMindblow: makeNodeComponent("imgMindblow"),
     imgBird: makeNodeComponent("imgBird"),
-    hero: makeNodeComponent("hero"),
+    heroText: makeNodeComponent("heroText"),
     frame9: makeNodeComponent("frame9"),
     frame2: makeNodeComponent("frame2"),
     discoverTheUnexpected: makeNodeComponent("discoverTheUnexpected"),
     signup2: makeNodeComponent("signup2"),
-    tickers: makeNodeComponent("tickers"),
-    figmaPaste: makeNodeComponent("figmaPaste"),
+    section2: makeNodeComponent("section2"),
+    content2: makeNodeComponent("content2"),
     frame11: makeNodeComponent("frame11"),
     logo5: makeNodeComponent("logo5"),
     group6: makeNodeComponent("group6"),

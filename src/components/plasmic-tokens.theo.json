@@ -11,6 +11,16 @@
       }
     },
     {
+      "name": "green",
+      "type": "color",
+      "value": "#C1F545",
+      "category": "color",
+      "meta": {
+        "projectId": "neRFmgTP9QWA953pSsa5o7",
+        "id": "T5y1lt1cT"
+      }
+    },
+    {
       "name": "white",
       "type": "color",
       "value": "#FBFBFB",

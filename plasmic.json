@@ -36,10 +36,10 @@
         {
           "id": "R6s1FdhksG",
           "name": "Reveal",
+          "displayName": "hostless-reveal",
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -56,10 +56,10 @@
         {
           "id": "jGx9tiKJoex",
           "name": "NavigationBar",
+          "displayName": "hostless-plasmic-navigation-bar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "neRFmgTP9QWA953pSsa5o7",
@@ -107,6 +107,19 @@
           "cssFilePath": "plasmic/channel_4/PlasmicButtonPrimary.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "l4eGm_bHuO",
+          "name": "Rainbow",
+          "type": "managed",
+          "projectId": "neRFmgTP9QWA953pSsa5o7",
+          "renderModuleFilePath": "plasmic/channel_4/PlasmicRainbow.tsx",
+          "importSpec": {
+            "modulePath": "Rainbow.tsx"
+          },
+          "cssFilePath": "plasmic/channel_4/PlasmicRainbow.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -129,6 +142,21 @@
           "id": "VIkio6fs-e",
           "name": "Line1Icon",
           "moduleFilePath": "plasmic/channel_4/icons/PlasmicIcon__Line1.tsx"
+        },
+        {
+          "id": "7uU1LH5uz",
+          "name": "TwitterIcon",
+          "moduleFilePath": "plasmic/channel_4/icons/PlasmicIcon__Twitter.tsx"
+        },
+        {
+          "id": "buuL8j414",
+          "name": "DiscordRoundIcon",
+          "moduleFilePath": "plasmic/channel_4/icons/PlasmicIcon__DiscordRound.tsx"
+        },
+        {
+          "id": "AZYSPIjGT",
+          "name": "Rainbowbarsvg2Icon",
+          "moduleFilePath": "plasmic/channel_4/icons/PlasmicIcon__Rainbowbarsvg2.tsx"
         }
       ],
       "images": [
@@ -231,6 +259,11 @@
           "id": "jnitEuqy-",
           "name": "channel4-og.png",
           "filePath": "plasmic/channel_4/images/channel4Ogpng.png"
+        },
+        {
+          "id": "ITIXroXeF",
+          "name": "rainbow.gif",
+          "filePath": "plasmic/channel_4/images/rainbowgif.gif"
         }
       ],
       "indirect": false,
@@ -239,12 +272,58 @@
         {
           "id": "qzjggDO6vD",
           "name": "PlasmicHead",
+          "displayName": "hostless-plasmic-head",
           "componentImportPath": "@plasmicapp/react-web"
         },
         {
           "id": "4_Dbs2EyiJ",
           "name": "Fetcher",
+          "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
+        }
+      ]
+    },
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": "3.20.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic_plasmic_basic_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "displayName": "hostless-iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "displayName": "hostless-html-video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "displayName": "hostless-embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "displayName": "hostless-data-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "zlBHsvkFlN",
+          "name": "ConditionGuard",
+          "displayName": "hostless-condition-guard",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ]
     }
@@ -260,6 +339,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.212",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.212/dist/plasmic.schema.json"
+  "cliVersion": "0.1.294",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.294/dist/plasmic.schema.json"
 }

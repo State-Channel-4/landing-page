@@ -403,7 +403,7 @@ function PlasmicIndex__RenderFunc(props: {
                       projectcss.a,
                       sty.buttonPill
                     )}
-                    href={"https://poc-2.channel4.wtf/" as const}
+                    href={"https://poc2.channel4.wtf/" as const}
                     onClick={async event => {
                       const $steps = {};
                     }}

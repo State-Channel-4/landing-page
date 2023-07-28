@@ -38,6 +38,8 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_channel_4.module.css"; // plasmic-import: neRFmgTP9QWA953pSsa5o7/projectcss
 import sty from "./PlasmicRainbow.module.css"; // plasmic-import: l4eGm_bHuO/css
 
+createPlasmicElementProxy;
+
 export type PlasmicRainbow__VariantMembers = {};
 export type PlasmicRainbow__VariantsArgs = {};
 type VariantPropType = keyof PlasmicRainbow__VariantsArgs;
@@ -147,7 +149,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   rectangle17: "div";
 };

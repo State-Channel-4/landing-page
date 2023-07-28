@@ -42,6 +42,8 @@ import sty from "./PlasmicButton.module.css"; // plasmic-import: pGak-yv7rOU/css
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: VEwB0Sa7oAv/icon
 import IconIcon from "./icons/PlasmicIcon__Icon"; // plasmic-import: K0mbZlcX6xb/icon
 
+createPlasmicElementProxy;
+
 export type PlasmicButton__VariantMembers = {
   showStartIcon: "showStartIcon";
   showEndIcon: "showEndIcon";
@@ -641,7 +643,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "button";
   startIconContainer: "div";

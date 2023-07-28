@@ -51,6 +51,8 @@ import ellipse4D8Er85Y8 from "./images/ellipse4.bin"; // plasmic-import: D8ER85-
 import ellipse5FXf3CNimeb from "./images/ellipse5.bin"; // plasmic-import: FXf3cNIMEB/picture
 import ellipse6TpAok4K3Y4 from "./images/ellipse6.bin"; // plasmic-import: tpAok4K3y4/picture
 
+createPlasmicElementProxy;
+
 export type PlasmicIndex__VariantMembers = {};
 export type PlasmicIndex__VariantsArgs = {};
 type VariantPropType = keyof PlasmicIndex__VariantsArgs;
@@ -178,7 +180,7 @@ function PlasmicIndex__RenderFunc(props: {
             data-plasmic-override={overrides.embedHtml}
             className={classNames("__wab_instance", sty.embedHtml)}
             code={
-              '<script src="https://swetrix.org/swetrix.js" defer></script>\n<script>\n  document.addEventListener(\'DOMContentLoaded\', function() {\n    swetrix.init(\'E1IGD5NiZF1K\')\n    swetrix.trackViews()\n  })\n</script>\n\n<noscript>\n  <img\n    src="https://api.swetrix.com/log/noscript?pid=E1IGD5NiZF1K"\n    alt=""\n    referrerpolicy="no-referrer-when-downgrade"\n  />\n</noscript>' as const
+              "<!-- Matomo -->\n<script>\n  var _paq = window._paq = window._paq || [];\n  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n  _paq.push([\"setCookieDomain\", \"*.channel4.wtf\"]);\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n  (function() {\n    var u=\"https://channel4wtf.matomo.cloud/\";\n    _paq.push(['setTrackerUrl', u+'matomo.php']);\n    _paq.push(['setSiteId', '1']);\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.async=true; g.src='//cdn.matomo.cloud/channel4wtf.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);\n  })();\n</script>\n<!-- End Matomo Code -->\n" as const
             }
           />
 
@@ -1215,7 +1217,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  (typeof PlasmicDescendants)[T][number];
+  typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   content: "div";
   embedHtml: typeof Embed;

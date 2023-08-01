@@ -405,7 +405,7 @@ function PlasmicIndex__RenderFunc(props: {
                       projectcss.a,
                       sty.buttonPill
                     )}
-                    href={"https://poc2.channel4.wtf/" as const}
+                    href={"https://app.channel4.wtf/" as const}
                     onClick={async event => {
                       const $steps = {};
                     }}
@@ -420,7 +420,7 @@ function PlasmicIndex__RenderFunc(props: {
                         sty.btnString
                       )}
                     >
-                      {"Launch App - POC2"}
+                      {"Launch App - v0.2"}
                     </div>
                   </p.Stack>
                 </p.Stack>
@@ -867,7 +867,7 @@ function PlasmicIndex__RenderFunc(props: {
                       projectcss.__wab_text,
                       sty.link___5Vtfd
                     )}
-                    href={"https://poc-2.channel4.wtf/" as const}
+                    href={"https://app.channel4.wtf/" as const}
                     target={"_blank" as const}
                   >
                     {"Launch App"}
@@ -879,7 +879,7 @@ function PlasmicIndex__RenderFunc(props: {
                       sty.text___7LqNy
                     )}
                   >
-                    {"POC2 - You are early. LFG."}
+                    {"V0.2 - You are early. LFG."}
                   </div>
                 </p.Stack>
               ) : null}

@@ -342,6 +342,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.302",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.302/dist/plasmic.schema.json"
+  "cliVersion": "0.1.303",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.303/dist/plasmic.schema.json"
 }

@@ -57,13 +57,7 @@ export interface DefaultRainbowProps {
   className?: string;
 }
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
+const $$ = {};
 
 function PlasmicRainbow__RenderFunc(props: {
   variants: PlasmicRainbow__VariantsArgs;
@@ -73,19 +67,18 @@ function PlasmicRainbow__RenderFunc(props: {
 }) {
   const { variants, overrides, forNode } = props;
 
-  const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
 
   const $props = {
     ...args,
     ...variants
   };
+
+  const $ctx = ph.useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
-  const [$queries, setDollarQueries] = React.useState({});
 
   return (
     <div
@@ -103,41 +96,25 @@ function PlasmicRainbow__RenderFunc(props: {
       )}
       onAnimationStart={async event => {
         const $steps = {};
+
         $steps["updateStateVariable"] = true
           ? (() => {
               const actionArgs = {};
-              return __wrapUserFunction(
-                {
-                  type: "InteractionLoc",
-                  actionName: "updateVariable",
-                  interactionUuid: "5D4H15dEdN",
-                  componentUuid: "l4eGm_bHuO"
-                },
-                () =>
-                  (({ variable, value, startIndex, deleteCount }) => {
-                    if (!variable) {
-                      return;
-                    }
-                    const { objRoot, variablePath } = variable;
-                    undefined;
-                  })?.apply(null, [actionArgs]),
-                actionArgs
-              );
+              return (({ variable, value, startIndex, deleteCount }) => {
+                if (!variable) {
+                  return;
+                }
+                const { objRoot, variablePath } = variable;
+                undefined;
+              })?.apply(null, [actionArgs]);
             })()
           : undefined;
         if (
+          $steps["updateStateVariable"] != null &&
           typeof $steps["updateStateVariable"] === "object" &&
           typeof $steps["updateStateVariable"].then === "function"
         ) {
-          $steps["updateStateVariable"] = await __wrapUserPromise(
-            {
-              type: "InteractionLoc",
-              actionName: "updateVariable",
-              interactionUuid: "5D4H15dEdN",
-              componentUuid: "l4eGm_bHuO"
-            },
-            $steps["updateStateVariable"]
-          );
+          $steps["updateStateVariable"] = await $steps["updateStateVariable"];
         }
       }}
     />
@@ -149,7 +126,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  typeof PlasmicDescendants[T][number];
+  (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   rectangle17: "div";
 };
@@ -188,7 +165,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       () =>
         deriveRenderOpts(props, {
           name: nodeName,
-          descendantNames: [...PlasmicDescendants[nodeName]],
+          descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicRainbow__ArgProps,
           internalVariantPropNames: PlasmicRainbow__VariantProps
         }),

@@ -44,16 +44,10 @@
 .img__dPhQs > picture > img {
   object-fit: cover;
 }
-.img__dPhQs > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 .img__bQ3Ju {
   object-fit: cover;
 }
 .img__bQ3Ju > picture > img {
-  object-fit: cover;
-}
-.img__bQ3Ju > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .nav2 {
@@ -212,9 +206,6 @@
   left: 86.59%;
 }
 .img___0CTJi > picture > img {
-  object-fit: cover;
-}
-.img___0CTJi > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .column___166Gc {
@@ -407,9 +398,6 @@
   margin-top: calc(-120px + 24px) !important;
 }
 .img__cXp8I > picture > img {
-  object-fit: contain;
-}
-.img__cXp8I > :global(.__wab_img-spacer) > img {
   object-fit: contain;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -754,9 +742,6 @@
 .img__kdhfW > picture > img {
   object-fit: cover;
 }
-.img__kdhfW > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 .frame7 {
   width: 650px;
   height: auto;
@@ -1040,9 +1025,6 @@
 .img__j7Jle > picture > img {
   object-fit: cover;
 }
-.img__j7Jle > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 .logo3 {
   width: 45px;
   height: 49px;
@@ -1144,9 +1126,6 @@
 .img__l9Gw6 > picture > img {
   object-fit: cover;
 }
-.img__l9Gw6 > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
-}
 .logo4 {
   width: 45px;
   height: 49px;
@@ -1246,9 +1225,6 @@
   left: 86.66%;
 }
 .img___97B9T > picture > img {
-  object-fit: cover;
-}
-.img___97B9T > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .frame13 {

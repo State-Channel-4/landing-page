@@ -32,8 +32,8 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
-import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import { Embed } from "@plasmicpkgs/plasmic-basic-components";
+import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 
 import { useScreenVariants as useScreenVariantsgwAe5GtTDpVtL } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: gwAE5GtTDpVtL/globalVariant
 
@@ -50,6 +50,7 @@ import ellipse7OnkiPe4Vwt from "./images/ellipse7.bin"; // plasmic-import: OnkiP
 import ellipse4D8Er85Y8 from "./images/ellipse4.bin"; // plasmic-import: D8ER85-y8/picture
 import ellipse5FXf3CNimeb from "./images/ellipse5.bin"; // plasmic-import: FXf3cNIMEB/picture
 import ellipse6TpAok4K3Y4 from "./images/ellipse6.bin"; // plasmic-import: tpAok4K3y4/picture
+import channel4OgpngJnitEuqy from "./images/channel4Ogpng.png"; // plasmic-import: jnitEuqy-/picture
 
 createPlasmicElementProxy;
 
@@ -124,13 +125,7 @@ export interface DefaultIndexProps {
   className?: string;
 }
 
-const __wrapUserFunction =
-  globalThis.__PlasmicWrapUserFunction ?? ((loc, fn) => fn());
-const __wrapUserPromise =
-  globalThis.__PlasmicWrapUserPromise ??
-  (async (loc, promise) => {
-    return await promise;
-  });
+const $$ = {};
 
 function PlasmicIndex__RenderFunc(props: {
   variants: PlasmicIndex__VariantsArgs;
@@ -140,19 +135,18 @@ function PlasmicIndex__RenderFunc(props: {
 }) {
   const { variants, overrides, forNode } = props;
 
-  const $ctx = ph.useDataEnv?.() || {};
   const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
 
   const $props = {
     ...args,
     ...variants
   };
+
+  const $ctx = ph.useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
-
-  const [$queries, setDollarQueries] = React.useState({});
 
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsgwAe5GtTDpVtL()
@@ -180,56 +174,53 @@ function PlasmicIndex__RenderFunc(props: {
             data-plasmic-override={overrides.embedHtml}
             className={classNames("__wab_instance", sty.embedHtml)}
             code={
-              "<!-- Matomo -->\n<script>\n  var _paq = window._paq = window._paq || [];\n  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n  (function() {\n    var u=\"https://psedev.matomo.cloud/\";\n    _paq.push(['setTrackerUrl', u+'matomo.php']);\n    _paq.push(['setSiteId', '4']);\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.async=true; g.src='//cdn.matomo.cloud/psedev.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);\n  })();\n</script>\n<!-- End Matomo Code -->\n\n" as const
+              "<!-- Matomo -->\n<script>\n  var _paq = window._paq = window._paq || [];\n  /* tracker methods like \"setCustomDimension\" should be called before \"trackPageView\" */\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n  (function() {\n    var u=\"https://psedev.matomo.cloud/\";\n    _paq.push(['setTrackerUrl', u+'matomo.php']);\n    _paq.push(['setSiteId', '4']);\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.async=true; g.src='//cdn.matomo.cloud/psedev.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);\n  })();\n</script>\n<!-- End Matomo Code -->\n\n"
             }
           />
 
-          {true ? (
-            <NavigationBar
-              data-plasmic-name={"nav"}
-              data-plasmic-override={overrides.nav}
-              brand={null}
-              className={classNames("__wab_instance", sty.nav)}
-              closeButton={
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__bQ3Ju)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"none" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  src={"https://static1.plasmic.app/close.svg" as const}
-                />
-              }
-              forceOpenMenu={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? true
-                  : undefined
-              }
-              itemsGap={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? undefined
-                  : (8 as const)
-              }
-              menuItems={null}
-              openButton={
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__dPhQs)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"none" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"auto" as const}
-                  src={"https://static1.plasmic.app/menu.svg" as const}
-                />
-              }
-              responsiveBreakpoint={768 as const}
-            />
-          ) : null}
+          <NavigationBar
+            data-plasmic-name={"nav"}
+            data-plasmic-override={overrides.nav}
+            brand={null}
+            className={classNames("__wab_instance", sty.nav)}
+            closeButton={
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__bQ3Ju)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={"https://static1.plasmic.app/close.svg"}
+              />
+            }
+            forceOpenMenu={
+              hasVariant(globalVariants, "screen", "mobileOnly")
+                ? true
+                : undefined
+            }
+            itemsGap={
+              hasVariant(globalVariants, "screen", "mobileOnly") ? undefined : 8
+            }
+            menuItems={null}
+            openButton={
+              <p.PlasmicImg
+                alt={""}
+                className={classNames(sty.img__dPhQs)}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"none"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={"auto"}
+                src={"https://static1.plasmic.app/menu.svg"}
+              />
+            }
+            responsiveBreakpoint={768}
+          />
+
           <div
             data-plasmic-name={"nav2"}
             data-plasmic-override={overrides.nav2}
@@ -267,13 +258,13 @@ function PlasmicIndex__RenderFunc(props: {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img___0CTJi)}
-                    displayHeight={"7px" as const}
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"7px" as const}
-                    loading={"lazy" as const}
+                    displayHeight={"7px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"7px"}
+                    loading={"lazy"}
                     src={{
                       src: ellipse29Mrcxvfm8O,
                       fullWidth: 7,
@@ -285,165 +276,159 @@ function PlasmicIndex__RenderFunc(props: {
               </div>
             </div>
             <div className={classNames(projectcss.all, sty.column___166Gc)}>
-              {true ? (
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"frame10"}
-                  data-plasmic-override={overrides.frame10}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame10)}
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"frame10"}
+                data-plasmic-override={overrides.frame10}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.frame10)}
+              >
+                <a
+                  data-plasmic-name={"twitter"}
+                  data-plasmic-override={overrides.twitter}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.twitter
+                  )}
+                  href={"https://twitter.com/StateChannel_4"}
+                  target={"_blank"}
                 >
-                  <a
-                    data-plasmic-name={"twitter"}
-                    data-plasmic-override={overrides.twitter}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.twitter
-                    )}
-                    href={"https://twitter.com/StateChannel_4" as const}
-                    target={"_blank" as const}
-                  >
-                    <TwitterIcon
-                      data-plasmic-name={"twitter2"}
-                      data-plasmic-override={overrides.twitter2}
-                      className={classNames(projectcss.all, sty.twitter2)}
-                      role={"img"}
-                    />
-                  </a>
-                  <a
-                    data-plasmic-name={"discordLink2"}
-                    data-plasmic-override={overrides.discordLink2}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.discordLink2
-                    )}
-                    href={"https://discord.gg/76UrYgVyEx" as const}
-                    target={"_blank" as const}
-                  >
-                    <DiscordRoundIcon
-                      data-plasmic-name={"discord2"}
-                      data-plasmic-override={overrides.discord2}
-                      className={classNames(projectcss.all, sty.discord2)}
-                      role={"img"}
-                    />
-                  </a>
-                </p.Stack>
-              ) : null}
+                  <TwitterIcon
+                    data-plasmic-name={"twitter2"}
+                    data-plasmic-override={overrides.twitter2}
+                    className={classNames(projectcss.all, sty.twitter2)}
+                    role={"img"}
+                  />
+                </a>
+                <a
+                  data-plasmic-name={"discordLink2"}
+                  data-plasmic-override={overrides.discordLink2}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.discordLink2
+                  )}
+                  href={"https://discord.gg/76UrYgVyEx"}
+                  target={"_blank"}
+                >
+                  <DiscordRoundIcon
+                    data-plasmic-name={"discord2"}
+                    data-plasmic-override={overrides.discord2}
+                    className={classNames(projectcss.all, sty.discord2)}
+                    role={"img"}
+                  />
+                </a>
+              </p.Stack>
             </div>
           </div>
-          {true ? (
-            <div
-              data-plasmic-name={"hero"}
-              data-plasmic-override={overrides.hero}
-              className={classNames(projectcss.all, sty.hero)}
+          <div
+            data-plasmic-name={"hero"}
+            data-plasmic-override={overrides.hero}
+            className={classNames(projectcss.all, sty.hero)}
+          >
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"hero2"}
+              data-plasmic-override={overrides.hero2}
+              hasGap={true}
+              className={classNames(projectcss.all, sty.hero2)}
             >
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"hero2"}
-                data-plasmic-override={overrides.hero2}
+                data-plasmic-name={"frame3"}
+                data-plasmic-override={overrides.frame3}
                 hasGap={true}
-                className={classNames(projectcss.all, sty.hero2)}
+                className={classNames(projectcss.all, sty.frame3)}
               >
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"frame3"}
-                  data-plasmic-override={overrides.frame3}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.frame3)}
-                >
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__cXp8I)}
-                    displayHeight={
-                      hasVariant(globalVariants, "screen", "mobileOnly")
-                        ? ("180px" as const)
-                        : ("auto" as const)
-                    }
-                    displayMaxHeight={"none" as const}
-                    displayMaxWidth={"100%" as const}
-                    displayMinHeight={"0" as const}
-                    displayMinWidth={"0" as const}
-                    displayWidth={"auto" as const}
-                    loading={"lazy" as const}
-                    src={{
-                      src: rainbowgifItiXroXeF,
-                      fullWidth: 466,
-                      fullHeight: 248,
-                      aspectRatio: undefined
-                    }}
-                  />
+                <p.PlasmicImg
+                  alt={""}
+                  className={classNames(sty.img__cXp8I)}
+                  displayHeight={
+                    hasVariant(globalVariants, "screen", "mobileOnly")
+                      ? "180px"
+                      : "auto"
+                  }
+                  displayMaxHeight={"none"}
+                  displayMaxWidth={"100%"}
+                  displayMinHeight={"0"}
+                  displayMinWidth={"0"}
+                  displayWidth={"auto"}
+                  loading={"lazy"}
+                  src={{
+                    src: rainbowgifItiXroXeF,
+                    fullWidth: 466,
+                    fullHeight: 248,
+                    aspectRatio: undefined
+                  }}
+                />
 
+                <div
+                  data-plasmic-name={"discoverTheUnexpected2"}
+                  data-plasmic-override={overrides.discoverTheUnexpected2}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.discoverTheUnexpected2
+                  )}
+                >
+                  {"Discover the unexpected. "}
+                </div>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text__rsp9F
+                  )}
+                >
+                  {"Random, joyful content for your eyeholes"}
+                </div>
+                <p.Stack
+                  as={"a"}
+                  data-plasmic-name={"buttonPill"}
+                  data-plasmic-override={overrides.buttonPill}
+                  hasGap={true}
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    sty.buttonPill
+                  )}
+                  href={"https://app.channel4.wtf/"}
+                  onClick={async event => {
+                    const $steps = {};
+                  }}
+                  target={"_blank"}
+                >
                   <div
-                    data-plasmic-name={"discoverTheUnexpected2"}
-                    data-plasmic-override={overrides.discoverTheUnexpected2}
+                    data-plasmic-name={"btnString"}
+                    data-plasmic-override={overrides.btnString}
                     className={classNames(
                       projectcss.all,
                       projectcss.__wab_text,
-                      sty.discoverTheUnexpected2
+                      sty.btnString
                     )}
                   >
-                    {"Discover the unexpected. "}
+                    {"Launch App - v0.3"}
                   </div>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__rsp9F
-                    )}
-                  >
-                    {"Random, joyful content for your eyeholes"}
-                  </div>
-                  <p.Stack
-                    as={"a"}
-                    data-plasmic-name={"buttonPill"}
-                    data-plasmic-override={overrides.buttonPill}
-                    hasGap={true}
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      sty.buttonPill
-                    )}
-                    href={"https://app.channel4.wtf/" as const}
-                    onClick={async event => {
-                      const $steps = {};
-                    }}
-                    target={"_blank" as const}
-                  >
-                    <div
-                      data-plasmic-name={"btnString"}
-                      data-plasmic-override={overrides.btnString}
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.btnString
-                      )}
-                    >
-                      {"Launch App - v0.2"}
-                    </div>
-                  </p.Stack>
                 </p.Stack>
               </p.Stack>
-            </div>
-          ) : null}
-          {true ? (
+            </p.Stack>
+          </div>
+          <div
+            data-plasmic-name={"noAlgo"}
+            data-plasmic-override={overrides.noAlgo}
+            className={classNames(projectcss.all, sty.noAlgo)}
+          >
             <div
-              data-plasmic-name={"noAlgo"}
-              data-plasmic-override={overrides.noAlgo}
-              className={classNames(projectcss.all, sty.noAlgo)}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text___2GwSe
+              )}
             >
-              <div
-                className={classNames(
-                  projectcss.all,
-                  projectcss.__wab_text,
-                  sty.text___2GwSe
-                )}
-              >
-                {"NO MORE BUL****T ALGORITHM."}
-              </div>
+              {"NO MORE BUL****T ALGORITHM."}
             </div>
-          ) : null}
+          </div>
           <div
             data-plasmic-name={"wtf"}
             data-plasmic-override={overrides.wtf}
@@ -494,13 +479,13 @@ function PlasmicIndex__RenderFunc(props: {
                     <p.PlasmicImg
                       alt={""}
                       className={classNames(sty.img__kdhfW)}
-                      displayHeight={"9px" as const}
-                      displayMaxHeight={"none" as const}
-                      displayMaxWidth={"100%" as const}
-                      displayMinHeight={"0" as const}
-                      displayMinWidth={"0" as const}
-                      displayWidth={"9px" as const}
-                      loading={"lazy" as const}
+                      displayHeight={"9px"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"100%"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"9px"}
+                      loading={"lazy"}
                       src={{
                         src: ellipse7OnkiPe4Vwt,
                         fullWidth: 9,
@@ -568,190 +553,184 @@ function PlasmicIndex__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(projectcss.all, sty.frame14)}
                 >
-                  {(
-                    hasVariant(globalVariants, "screen", "mobileOnly")
-                      ? true
-                      : true
-                  ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.freeBox__vCuXl)}
+                  >
                     <div
-                      className={classNames(projectcss.all, sty.freeBox__vCuXl)}
+                      data-plasmic-name={"group2"}
+                      data-plasmic-override={overrides.group2}
+                      className={classNames(projectcss.all, sty.group2)}
                     >
                       <div
-                        data-plasmic-name={"group2"}
-                        data-plasmic-override={overrides.group2}
-                        className={classNames(projectcss.all, sty.group2)}
+                        data-plasmic-name={"logo2"}
+                        data-plasmic-override={overrides.logo2}
+                        className={classNames(projectcss.all, sty.logo2)}
                       >
                         <div
-                          data-plasmic-name={"logo2"}
-                          data-plasmic-override={overrides.logo2}
-                          className={classNames(projectcss.all, sty.logo2)}
+                          data-plasmic-name={"group3"}
+                          data-plasmic-override={overrides.group3}
+                          className={classNames(projectcss.all, sty.group3)}
                         >
                           <div
-                            data-plasmic-name={"group3"}
-                            data-plasmic-override={overrides.group3}
-                            className={classNames(projectcss.all, sty.group3)}
-                          >
-                            <div
-                              data-plasmic-name={"rectangle3"}
-                              data-plasmic-override={overrides.rectangle3}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle3
-                              )}
-                            />
+                            data-plasmic-name={"rectangle3"}
+                            data-plasmic-override={overrides.rectangle3}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle3
+                            )}
+                          />
 
-                            <div
-                              data-plasmic-name={"rectangle6"}
-                              data-plasmic-override={overrides.rectangle6}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle6
-                              )}
-                            />
+                          <div
+                            data-plasmic-name={"rectangle6"}
+                            data-plasmic-override={overrides.rectangle6}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle6
+                            )}
+                          />
 
-                            <div
-                              data-plasmic-name={"rectangle7"}
-                              data-plasmic-override={overrides.rectangle7}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle7
-                              )}
-                            />
+                          <div
+                            data-plasmic-name={"rectangle7"}
+                            data-plasmic-override={overrides.rectangle7}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle7
+                            )}
+                          />
 
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__j7Jle)}
-                              displayHeight={"6px" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"6px" as const}
-                              loading={"lazy" as const}
-                              src={{
-                                src: ellipse4D8Er85Y8,
-                                fullWidth: 6,
-                                fullHeight: 6,
-                                aspectRatio: 1
-                              }}
-                            />
-                          </div>
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__j7Jle)}
+                            displayHeight={"6px"}
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"6px"}
+                            loading={"lazy"}
+                            src={{
+                              src: ellipse4D8Er85Y8,
+                              fullWidth: 6,
+                              fullHeight: 6,
+                              aspectRatio: 1
+                            }}
+                          />
                         </div>
+                      </div>
+                      <div
+                        data-plasmic-name={"logo3"}
+                        data-plasmic-override={overrides.logo3}
+                        className={classNames(projectcss.all, sty.logo3)}
+                      >
                         <div
-                          data-plasmic-name={"logo3"}
-                          data-plasmic-override={overrides.logo3}
-                          className={classNames(projectcss.all, sty.logo3)}
+                          data-plasmic-name={"group4"}
+                          data-plasmic-override={overrides.group4}
+                          className={classNames(projectcss.all, sty.group4)}
                         >
                           <div
-                            data-plasmic-name={"group4"}
-                            data-plasmic-override={overrides.group4}
-                            className={classNames(projectcss.all, sty.group4)}
-                          >
-                            <div
-                              data-plasmic-name={"rectangle8"}
-                              data-plasmic-override={overrides.rectangle8}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle8
-                              )}
-                            />
+                            data-plasmic-name={"rectangle8"}
+                            data-plasmic-override={overrides.rectangle8}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle8
+                            )}
+                          />
 
-                            <div
-                              data-plasmic-name={"rectangle9"}
-                              data-plasmic-override={overrides.rectangle9}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle9
-                              )}
-                            />
+                          <div
+                            data-plasmic-name={"rectangle9"}
+                            data-plasmic-override={overrides.rectangle9}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle9
+                            )}
+                          />
 
-                            <div
-                              data-plasmic-name={"rectangle10"}
-                              data-plasmic-override={overrides.rectangle10}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle10
-                              )}
-                            />
+                          <div
+                            data-plasmic-name={"rectangle10"}
+                            data-plasmic-override={overrides.rectangle10}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle10
+                            )}
+                          />
 
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img__l9Gw6)}
-                              displayHeight={"6px" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"6px" as const}
-                              loading={"lazy" as const}
-                              src={{
-                                src: ellipse5FXf3CNimeb,
-                                fullWidth: 6,
-                                fullHeight: 6,
-                                aspectRatio: 1
-                              }}
-                            />
-                          </div>
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img__l9Gw6)}
+                            displayHeight={"6px"}
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"6px"}
+                            loading={"lazy"}
+                            src={{
+                              src: ellipse5FXf3CNimeb,
+                              fullWidth: 6,
+                              fullHeight: 6,
+                              aspectRatio: 1
+                            }}
+                          />
                         </div>
+                      </div>
+                      <div
+                        data-plasmic-name={"logo4"}
+                        data-plasmic-override={overrides.logo4}
+                        className={classNames(projectcss.all, sty.logo4)}
+                      >
                         <div
-                          data-plasmic-name={"logo4"}
-                          data-plasmic-override={overrides.logo4}
-                          className={classNames(projectcss.all, sty.logo4)}
+                          data-plasmic-name={"group5"}
+                          data-plasmic-override={overrides.group5}
+                          className={classNames(projectcss.all, sty.group5)}
                         >
                           <div
-                            data-plasmic-name={"group5"}
-                            data-plasmic-override={overrides.group5}
-                            className={classNames(projectcss.all, sty.group5)}
-                          >
-                            <div
-                              data-plasmic-name={"rectangle11"}
-                              data-plasmic-override={overrides.rectangle11}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle11
-                              )}
-                            />
+                            data-plasmic-name={"rectangle11"}
+                            data-plasmic-override={overrides.rectangle11}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle11
+                            )}
+                          />
 
-                            <div
-                              data-plasmic-name={"rectangle12"}
-                              data-plasmic-override={overrides.rectangle12}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle12
-                              )}
-                            />
+                          <div
+                            data-plasmic-name={"rectangle12"}
+                            data-plasmic-override={overrides.rectangle12}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle12
+                            )}
+                          />
 
-                            <div
-                              data-plasmic-name={"rectangle13"}
-                              data-plasmic-override={overrides.rectangle13}
-                              className={classNames(
-                                projectcss.all,
-                                sty.rectangle13
-                              )}
-                            />
+                          <div
+                            data-plasmic-name={"rectangle13"}
+                            data-plasmic-override={overrides.rectangle13}
+                            className={classNames(
+                              projectcss.all,
+                              sty.rectangle13
+                            )}
+                          />
 
-                            <p.PlasmicImg
-                              alt={""}
-                              className={classNames(sty.img___97B9T)}
-                              displayHeight={"6px" as const}
-                              displayMaxHeight={"none" as const}
-                              displayMaxWidth={"100%" as const}
-                              displayMinHeight={"0" as const}
-                              displayMinWidth={"0" as const}
-                              displayWidth={"6px" as const}
-                              loading={"lazy" as const}
-                              src={{
-                                src: ellipse6TpAok4K3Y4,
-                                fullWidth: 6,
-                                fullHeight: 6,
-                                aspectRatio: 1
-                              }}
-                            />
-                          </div>
+                          <p.PlasmicImg
+                            alt={""}
+                            className={classNames(sty.img___97B9T)}
+                            displayHeight={"6px"}
+                            displayMaxHeight={"none"}
+                            displayMaxWidth={"100%"}
+                            displayMinHeight={"0"}
+                            displayMinWidth={"0"}
+                            displayWidth={"6px"}
+                            loading={"lazy"}
+                            src={{
+                              src: ellipse6TpAok4K3Y4,
+                              fullWidth: 6,
+                              fullHeight: 6,
+                              aspectRatio: 1
+                            }}
+                          />
                         </div>
                       </div>
                     </div>
-                  ) : null}
+                  </div>
                   <p.Stack
                     as={"div"}
                     data-plasmic-name={"frame13"}
@@ -838,7 +817,7 @@ function PlasmicIndex__RenderFunc(props: {
                           sty.text__wlgKc
                         )}
                       >
-                        {"Launching first official MVP"}
+                        {"Launching v.0.3"}
                       </div>
                     </p.Stack>
                   </p.Stack>
@@ -854,35 +833,33 @@ function PlasmicIndex__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.frame12)}
             >
-              {true ? (
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox__epnMr)}
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__epnMr)}
+              >
+                <a
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.a,
+                    projectcss.__wab_text,
+                    sty.link___5Vtfd
+                  )}
+                  href={"https://app.channel4.wtf/"}
+                  target={"_blank"}
                 >
-                  <a
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.a,
-                      projectcss.__wab_text,
-                      sty.link___5Vtfd
-                    )}
-                    href={"https://app.channel4.wtf/" as const}
-                    target={"_blank" as const}
-                  >
-                    {"Launch App"}
-                  </a>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___7LqNy
-                    )}
-                  >
-                    {"V0.2 - You are early. LFG."}
-                  </div>
-                </p.Stack>
-              ) : null}
+                  {"Launch App"}
+                </a>
+                <div
+                  className={classNames(
+                    projectcss.all,
+                    projectcss.__wab_text,
+                    sty.text___7LqNy
+                  )}
+                >
+                  {"V0.3 - You are early. LFG."}
+                </div>
+              </p.Stack>
               <p.Stack
                 as={"div"}
                 data-plasmic-name={"frame8"}
@@ -897,8 +874,8 @@ function PlasmicIndex__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.link__u3PXf
                   )}
-                  href={"https://discord.gg/76UrYgVyEx" as const}
-                  target={"_blank" as const}
+                  href={"https://discord.gg/76UrYgVyEx"}
+                  target={"_blank"}
                 >
                   {"Discord"}
                 </a>
@@ -909,8 +886,8 @@ function PlasmicIndex__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.link__zoZp
                   )}
-                  href={"https://twitter.com/StateChannel_4" as const}
-                  target={"_blank" as const}
+                  href={"https://twitter.com/StateChannel_4"}
+                  target={"_blank"}
                 >
                   {"Twitter"}
                 </a>
@@ -921,8 +898,8 @@ function PlasmicIndex__RenderFunc(props: {
                     projectcss.__wab_text,
                     sty.link__up95N
                   )}
-                  href={"https://airtable.com/shrAUZyvmFeWqti4F" as const}
-                  target={"_blank" as const}
+                  href={"https://airtable.com/shrAUZyvmFeWqti4F"}
+                  target={"_blank"}
                 >
                   {"Sign up for update"}
                 </a>
@@ -1217,7 +1194,7 @@ const PlasmicDescendants = {
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
-  typeof PlasmicDescendants[T][number];
+  (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   content: "div";
   embedHtml: typeof Embed;
@@ -1310,7 +1287,7 @@ function makeNodeComponent<NodeName extends NodeNameType>(nodeName: NodeName) {
       () =>
         deriveRenderOpts(props, {
           name: nodeName,
-          descendantNames: [...PlasmicDescendants[nodeName]],
+          descendantNames: PlasmicDescendants[nodeName],
           internalArgPropNames: PlasmicIndex__ArgProps,
           internalVariantPropNames: PlasmicIndex__VariantProps
         }),

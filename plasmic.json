@@ -40,7 +40,8 @@
           "componentImportPath": "@plasmicpkgs/react-awesome-reveal"
         }
       ],
-      "jsBundleThemes": []
+      "splitsProviderFilePath": "",
+      "customFunctions": []
     },
     {
       "projectId": "7nJ7UcFmq9UzB6eXfC5z4a",
@@ -61,7 +62,8 @@
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
       ],
-      "jsBundleThemes": []
+      "splitsProviderFilePath": "",
+      "customFunctions": []
     },
     {
       "projectId": "neRFmgTP9QWA953pSsa5o7",
@@ -283,7 +285,9 @@
           "displayName": "plasmic-data-source-fetcher",
           "componentImportPath": "@plasmicapp/react-web/lib/data-sources"
         }
-      ]
+      ],
+      "splitsProviderFilePath": "",
+      "customFunctions": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -326,9 +330,22 @@
           "name": "ConditionGuard",
           "displayName": "hostless-condition-guard",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "K-mWGqrHefEp",
+          "name": "SideEffect",
+          "displayName": "hostless-side-effect",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "SpkzmXJqg27p",
+          "name": "Timer",
+          "displayName": "hostless-timer",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
-      "jsBundleThemes": []
+      "splitsProviderFilePath": "",
+      "customFunctions": []
     }
   ],
   "globalVariants": {
@@ -342,6 +359,6 @@
     ]
   },
   "wrapPagesWithGlobalContexts": true,
-  "cliVersion": "0.1.303",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.303/dist/plasmic.schema.json"
+  "cliVersion": "0.1.325",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.325/dist/plasmic.schema.json"
 }
